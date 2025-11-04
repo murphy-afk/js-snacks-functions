@@ -2,7 +2,7 @@
  e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") 
  */
 
-const name = 'Mario';
+const nameExample = 'Mario';
 
 
 // Dichiara la funzione qui.
@@ -11,7 +11,7 @@ const sayHello = (name) => `Ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(sayHello(name));
+console.log(sayHello(nameExample));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario

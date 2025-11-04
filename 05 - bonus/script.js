@@ -6,7 +6,7 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
+const nameExample = 'Mario';
 
 
 // Dichiara la funzione qui.
@@ -25,7 +25,7 @@ const printGreeting = (name) => getGreetingType() + " " + name;
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(printGreeting(name));
+console.log(printGreeting(nameExample));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.

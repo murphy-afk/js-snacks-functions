@@ -12,7 +12,8 @@ const getInitials = (array) => {
     const curName = array[i];
     initials.push(curName[0]);
   }
-  return initials
+  
+  return initials;
 }
 
 // Invoca la funzione qui e stampa il risultato in console

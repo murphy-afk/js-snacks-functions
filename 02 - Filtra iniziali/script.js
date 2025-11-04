@@ -5,15 +5,14 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
-const filterByInitial = (array, letter) => {
-  const filteredArray = [];
-  for (let i = 0; i < array.length; i++) {
-    const curName = array[i];
-    if (curName[0] === letter) {
-      filteredArray.push(curName)
-    }
+const filterByInitial = (words, letter) => {
+  const filteredWords = [];
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    if (word[0] === letter) filteredWords.push(word);
   }
-  return filteredArray
+
+  return filteredWords;
 }
 
 // Invoca la funzione qui e stampa il risultato in console

@@ -12,13 +12,13 @@ const nameExample = 'Mario';
 // Dichiara la funzione qui.
 
 const getGreetingType = () => {
-  let greeting;
   const now = new Date();
   const hour = now.getHours();
+  let greeting;
   if (hour < 13) greeting = "Buongiorno";
-  if (hour > 13 && hour < 17) greeting = "Buon pomeriggio";
-  if (hour > 17) greeting = "Buonasera";
-  return greeting
+  if (hour >= 13 && hour < 17) greeting = "Buon pomeriggio";
+  if (hour >= 17) greeting = "Buonasera";
+  return greeting;
 }
 
 const printGreeting = (name) => getGreetingType() + " " + name;

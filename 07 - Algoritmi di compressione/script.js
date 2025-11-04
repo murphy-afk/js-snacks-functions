@@ -12,21 +12,23 @@
 // myCompress('Haapppy Codiiiiinnnng')
 // // Output: "Ha<2>p<3>y Codi<5>n<4>g"
 
-const wordExample = "Ciaaao a tttuutti";
+const wordExample = "Haapppy Codiiiiinnnng";
 
 
-
-let countDuplicates = 1;
-let formattedWord = "";
-for (let i = 0; i < wordExample.length; i++) {
-  const letter = wordExample[i];
-  if (letter === wordExample[i + 1]) countDuplicates++;
-  else {
-    formattedWord += letter;
-    if (countDuplicates > 1) formattedWord += `<${countDuplicates}>`;
+const formatWord = (word) => {
+  let countDuplicates = 1;
+  let formattedWord = "";
+  for (let i = 0; i < word.length; i++) {
+    const letter = word[i];
+    if (letter === word[i + 1]) countDuplicates++;
+    else {
+      formattedWord += letter;
+      if (countDuplicates > 1) formattedWord += `<${countDuplicates}>`;
+      countDuplicates = 1;
+    }
   }
+  return formattedWord
 }
 
 
-
-console.log(formattedWord);
+console.log(formatWord(wordExample));

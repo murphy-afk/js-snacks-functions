@@ -4,7 +4,6 @@
 
 const nameExample = 'Mario';
 
-
 // Dichiara la funzione qui.
 
 const sayHello = (name) => `Ciao ${name}`;
@@ -12,6 +11,5 @@ const sayHello = (name) => `Ciao ${name}`;
 // Invoca la funzione qui e stampa il risultato in console
 
 console.log(sayHello(nameExample));
-
 
 //Risultato atteso se si passa 'Mario': // ciao Mario

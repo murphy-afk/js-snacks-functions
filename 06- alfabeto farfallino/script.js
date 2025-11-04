@@ -17,14 +17,17 @@
 // fai vocale + f + vocale
 // restituisci una parola nuova dove le consonanti sono invariate e le vocali sostitute
 
-const wordExample = "ciao";
-const vowels = "aeiou";
-let translatedWord = "";
+const wordExample = "ciaou";
 
-for (let i = 0; i < wordExample.length; i++) {
-  const letter = wordExample[i];
-  const letterIsAVowel = vowels.includes(letter);
-  if (letterIsAVowel) translatedWord += letter + "f";
-  translatedWord += letter;
+const translateWord = (word) => {
+  const vowels = "aeiou";
+  let translatedWord = "";
+  for (let i = 0; i < word.length; i++) {
+    const letter = word[i];
+    const letterIsAVowel = vowels.includes(letter);
+    if (letterIsAVowel) translatedWord += letter + "f";
+    translatedWord += letter;
+  }
+  return translatedWord
 }
-console.log(translatedWord);
+console.log(translateWord(wordExample));

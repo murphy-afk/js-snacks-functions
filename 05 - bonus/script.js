@@ -17,7 +17,7 @@ const getGreetingType = () => {
 
   if (hour < 13) return "Buongiorno";
   if (hour >= 13 && hour < 17) return "Buon pomeriggio";
-  if (hour >= 17) return "Buonasera";
+  return "Buonasera";
 }
 
 const printGreeting = (name) => getGreetingType() + " " + name;

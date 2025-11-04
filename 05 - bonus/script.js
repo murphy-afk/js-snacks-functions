@@ -14,11 +14,10 @@ const nameExample = 'Mario';
 const getGreetingType = () => {
   const now = new Date();
   const hour = now.getHours();
-  let greeting;
-  if (hour < 13) greeting = "Buongiorno";
-  if (hour >= 13 && hour < 17) greeting = "Buon pomeriggio";
-  if (hour >= 17) greeting = "Buonasera";
-  return greeting;
+
+  if (hour < 13) return "Buongiorno";
+  if (hour >= 13 && hour < 17) return "Buon pomeriggio";
+  if (hour >= 17) return "Buonasera";
 }
 
 const printGreeting = (name) => getGreetingType() + " " + name;
